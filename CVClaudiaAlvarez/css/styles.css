@@ -1,0 +1,297 @@
+main {
+    font-family: 'Arial', sans-serif;
+    margin-top: 80px;
+    size: 300;
+    background-color: transparent;
+    background-attachment: fixed;
+    color: #332e2e;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    height: 30%;
+    position: 100;
+
+}
+.hero{
+    padding: 1;
+    height: 60%;
+    text-align: center;
+    margin-top: 20;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    color: #332e2e;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: flex;
+    /* Usamos flexbox para permitir que el contenido y la barra lateral ocupen el alto completo */
+}
+.hero{
+    text-align: center;
+    text-size-adjust: 100%;
+}
+p.lead.mb-4 {
+    text-align: center;
+    height: 60%;
+    margin-top: 10%;
+}
+div.col-lg-6.mx-auto {
+    text-align: center;
+    height: 80%;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+header:hover,
+nav a:hover {
+    color: rgb(235, 73, 221);
+}
+
+nav {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    background-image: url(./);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #332e2e;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: flex;
+    text-align: left;
+    align-content: flex-start;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    padding: 0px;
+    background-color: #eb9393;
+    /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+body > nav{
+    padding: 0;
+    margin-bottom: none;
+}
+.navbar-toggler {
+    display: block;
+    background-color: #f1afafcb;
+    color: #221313;
+    border: #160e0eb6;
+    cursor: pointer;
+    padding: 1px;
+    /* Agregado para dar espacio alrededor del icono */
+}
+
+.navbar-toggler:hover {
+    background-color: #268aeec2;
+}
+
+#nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100%;
+}
+
+#nav-links li {
+    margin: 5px 1px;
+    /* Ajusta el espaciado entre los enlaces */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ee0d0d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #df7878;
+}
+
+
+
+
+/* Contenedor principal para el contenido y la barra lateral */
+#container {
+    display: flex;
+    margin-left: 0;
+}
+
+/* Contenido principal */
+#main-content {
+    flex: 1;
+    padding: 20px;
+}
+li {
+    list-style-type: none; /* Elimina las viñetas */
+    color: #666;
+    margin: 5px 0;
+}
+button {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  /* Estilo para los iconos dentro de los botones */
+  button i {
+    margin-right: 0.5em;
+  }
+
+h1 {
+    color: #333;
+    margin: 10px 0;
+}
+
+p {
+    color: #666;
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+
+h1:hover,
+h2:hover {
+    color: #e66868;
+}
+
+h2:hover {
+    border-color: #e66868;
+}
+
+#contact+p {
+    color: #4CAF50;
+    /* Color verde para el mensaje de confirmación */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contact-form {
+    max-width: 500px;
+    /* Ajusta el ancho máximo del formulario */
+    margin: auto;
+    /* Centra el formulario en el contenedor */
+}
+
+/* Añade estilos al botón de descarga */
+.btn-primary {
+    margin-top: 20px;
+    /* Ajusta el espaciado superior */
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+footer:hover {
+    color: #e66868;
+}
+
+/* Media Queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    nav {
+        height: auto;
+        /* Ajusta la altura automáticamente */
+        background-color: #eb9393;
+        /* Fondo de la barra de navegación en dispositivos móviles */
+        flex-direction: column;
+        /* Cambia la dirección de los elementos a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+    }
+
+    #nav-links {
+        display: none;
+        /* Oculta los enlaces por defecto en dispositivos pequeños */
+        flex-direction: column;
+        /* Muestra los enlaces en una columna en lugar de una fila */
+        position: fixed;
+        top: 60px;
+        /* Ajusta la posición de los enlaces desplegables */
+        left: 0;
+        width: 100%;
+        background-color: #eb9393;
+        padding: 10px;
+    }
+
+    #nav-links.show {
+        display: flex;
+        /* Muestra los enlaces cuando el botón de menú se activa */
+    }
+
+    #nav-toggle {
+        display: block;
+        /* Muestra el botón de menú en dispositivos móviles */
+    }
+
+    #container {
+        flex-direction: column;
+        /* Apila el contenido y la barra lateral en dispositivos móviles */
+    }
+
+    #main-content {
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-toggler:hover {
+        background-color: #df7878;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+}

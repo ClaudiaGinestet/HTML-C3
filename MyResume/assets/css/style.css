@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #0563bb;
+  color: #bb8a05;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #4b06ed;
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #e306c5;
   color: #fff;
 }
 
@@ -77,7 +77,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #e78a8a;
 }
 
 #preloader:before {
@@ -85,7 +85,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid #bb05bb;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -130,7 +130,7 @@ h6 {
 @media (max-width: 991px) {
   #header {
     width: 300px;
-    background: #fff;
+    background: #e99c9c;
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
@@ -174,7 +174,7 @@ h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: #f2f4f8;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -211,7 +211,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #0563bb;
+  background: #db3086;
 }
 
 .nav-menu a:hover span,
@@ -265,7 +265,7 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #0563bb;
+  background-color: #db3086;
 }
 
 /*--------------------------------------------------------------
@@ -274,7 +274,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/hero-bg.jpg") top right repeat;
   background-size: cover;
   position: relative;
 }
@@ -304,14 +304,14 @@ h6 {
 }
 
 #hero p {
-  color: #45505b;
+  color: #3b454e;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #d613cc;
   letter-spacing: 1px;
 }
 
@@ -329,7 +329,7 @@ h6 {
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #d613cc;
 }
 
 @media (max-width: 992px) {
@@ -478,6 +478,7 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 60px;
   display: block;

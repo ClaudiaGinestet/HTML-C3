@@ -7,16 +7,18 @@ main {
     color: #332e2e;
     transition: background-color 0.3s ease;
     text-align: center;
-    height: 30%;
-    position: 100;
+    height: 20%;
+   
 
 }
-.hero{
+
+.hero {
     padding: 1;
     height: 60%;
     text-align: center;
     margin-top: 20;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 10px;
@@ -26,19 +28,23 @@ body {
     display: flex;
     /* Usamos flexbox para permitir que el contenido y la barra lateral ocupen el alto completo */
 }
-.hero{
+
+.hero {
     text-align: center;
     text-size-adjust: 100%;
 }
+
 p.lead.mb-4 {
     text-align: center;
     height: 60%;
     margin-top: 10%;
 }
+
 div.col-lg-6.mx-auto {
     text-align: center;
     height: 80%;
 }
+
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -53,7 +59,7 @@ nav a:hover {
 nav {
     font-family: 'Arial', sans-serif;
     margin: 10px;
-    background-image: url(./);
+    background: url(./bg-body.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -70,10 +76,12 @@ nav {
     background-color: #eb9393;
     /* Asegura que la barra de navegación esté por encima de otros elementos */
 }
-body > nav{
+
+body>nav {
     padding: 0;
     margin-bottom: none;
 }
+
 .navbar-toggler {
     display: block;
     background-color: #f1afafcb;
@@ -128,11 +136,14 @@ nav a:hover {
     flex: 1;
     padding: 20px;
 }
+
 li {
-    list-style-type: none; /* Elimina las viñetas */
+    list-style-type: none;
+    /* Elimina las viñetas */
     color: #666;
     margin: 5px 0;
 }
+
 button {
     display: flex;
     align-items: center;
@@ -142,12 +153,12 @@ button {
     border-radius: 5px;
     background-color: #f0f0f0;
     cursor: pointer;
-  }
+}
 
-  /* Estilo para los iconos dentro de los botones */
-  button i {
+/* Estilo para los iconos dentro de los botones */
+button i {
     margin-right: 0.5em;
-  }
+}
 
 h1 {
     color: #333;

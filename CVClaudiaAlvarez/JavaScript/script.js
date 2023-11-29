@@ -79,3 +79,40 @@ function redirigirGitHub() {
     
     window.open('https://www.linkedin.com/in/claudia-alvarez-ginestet-93206a261/', '_blank');
   }
+  //formulario
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        alert('Por favor, completa todos los campos del formulario.');
+        return;
+    }
+
+    var formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
+
+    fetch('enviar_formulario.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Mensaje enviado con éxito.');
+            // Puedes redirigir al usuario a otra página si lo deseas
+            // window.location.href = 'gracias.html';
+        } else {
+            alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.');
+        }
+    })
+    .catch(error => {
+        console.error('Error al enviar el formulario:', error);
+        alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.');
+    });
+});
